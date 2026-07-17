@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: #10B981;
+  --bg-base: #FFFFFF;
+  --surface-base: #FAFAFA;
+  --card-base: #F5F5F5;
+  --text-base: #111111;
+}
+
+.dark {
+  --primary: #18F2A4;
+  --bg-base: #000000;
+  --surface-base: #080808;
+  --card-base: #111111;
+  --text-base: #FFFFFF;
+}
+
+@theme {
+  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: var(--primary);
+  --color-bg-base: var(--bg-base);
+  --color-surface-base: var(--surface-base);
+  --color-card-base: var(--card-base);
+  --color-text-base: var(--text-base);
+}
+
+/* Custom Base Elements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: rgba(24, 242, 164, 0.2);
+  color: #18F2A4;
+}
+
+/* Custom Utilities for Premium Visual Polish (Vercel/Linear style) */
+.glass-panel {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Subtle premium grid background (Stripe/Linear style) */
+.grid-bg-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.grid-bg-light {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+/* Soft glow elements */
+.radial-glow-dark {
+  background: radial-gradient(circle 800px at 50% 200px, rgba(24, 242, 164, 0.07), transparent 80%);
+}
+
+.radial-glow-light {
+  background: radial-gradient(circle 800px at 50% 200px, rgba(16, 185, 129, 0.05), transparent 80%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+
