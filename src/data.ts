@@ -22,15 +22,15 @@ export const contactData: ContactData = {
 
 export const projects: Project[] = [
   {
-    name: "AdegaOS",
+    name: "FluxOS",
     type: "Business Management System (ERP)",
     status: "Em desenvolvimento",
-    url: "https://adegaos-demo.vercel.app",
-    description: "Sistema de gestão operacional desenvolvido após identificar gargalos reais em uma adega. Centraliza pedidos, estoque, financeiro, fornecedores, dashboards e fluxo operacional.",
-    problem: "Gargalos operacionais críticos, perda financeira por falha no controle manual de estoque e falta de dados centralizados para tomada de decisão ágil em comércios de bebidas.",
-    solution: "Um ERP modular e de alta performance que centraliza o controle de pedidos, fornecedores, contas a pagar/receber e gera dashboards inteligentes de saúde financeira em tempo real.",
-    result: "Otimização radical no tempo de processamento de pedidos, eliminação de erros de inventário e visibilidade total das margens operacionais do negócio.",
-    tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "Recharts"]
+    url: "https://fluxooperacional.vercel.app/",
+    description: "Sistema operacional de gestão (ERP leve) para adegas, bares, distribuidoras e conveniências. Unifica em uma única aplicação web: PDV, controle de estoque em dois níveis (caixas/unidades), salão com mesas e comandas, fila de produção (cozinha/bar), compras e financeiro com DRE gerencial.",
+    problem: "Gargalos operacionais críticos e fragmentação no comércio de bebidas e gastronomia: perda financeira por falha no controle manual de estoque e falta de integração em tempo real entre atendimento, produção e financeiro.",
+    solution: "Um ERP modular e multi-perfil com acesso rápido por PIN, salão com gestão visual de comandas/mesas, roteamento inteligente de pedidos para cozinha/bar, controle de estoque físico multi-nível e DRE gerencial calculado dinamicamente.",
+    result: "Otimização radical no tempo de atendimento de salão e balcão, eliminação de erros de inventário e visibilidade financeira em tempo real do faturamento ao lucro líquido.",
+    tech: ["React 19", "TypeScript", "Vite", "Firebase / Firestore", "Tailwind CSS", "Recharts", "Framer Motion"]
   },
   {
     name: "FitLoot",
