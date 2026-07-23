@@ -128,8 +128,8 @@ export default function Projects() {
                           <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/70" />
                           <span className="w-2.5 h-2.5 rounded-full bg-green-400/70" />
                         </div>
-                        <span className="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 tracking-wider">
-                          {project.name.toLowerCase()}-demo.vercel.app
+                        <span className="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 tracking-wider truncate max-w-[200px]">
+                          {project.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                         </span>
                       </div>
 
